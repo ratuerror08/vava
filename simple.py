@@ -64,7 +64,7 @@ def login():
 	kukis=input(f"{P} ! Login menggunakan cookie:{K} ")
 	with requests.Session() as ses:
 		try:
-			headers_tok = {"user-agent":"MMozilla/5.0 (Linux; Android 4.4.2; NT-1711 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"}
+			headers_tok = {"user-agent":"Nokia300/5.0 (07.03) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"}
 			url_tok = ses.get('https://business.facebook.com/business_locations',headers = headers_tok,cookies = {"cookie":kukis})
 			token = re.search("(EAAG\w+)", url_tok.text).group(1)
 			open('data/cookie.txt','w').write(kukis)
