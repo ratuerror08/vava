@@ -33,7 +33,7 @@ waktu = ("{}-{}-{}").format(hari,bulan,tahun)
 bulan12 = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
  
 #--- user agent
-uas=random.choice(["Mozilla/5.0 (Maemo; Linux; Jolla; Sailfish; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) NokiaBrowser/8.5.0 Mobile Safari/537.36"])
+uas=random.choice(["Mozilla/5.0 (Linux; Android 6.0; Acer One 7 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.77 Safari/537.36"])
 
 #--- warna
 M = '\x1b[1;91m'
