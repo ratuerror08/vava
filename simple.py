@@ -34,7 +34,7 @@ bulan12 = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05"
  
 #--- user agent
 def UAS(): # random ua
-	uas= (["Mozilla/5.0 (iPhone; CPU iPhone OS 16_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20B82 [FBAN/FBPageAdmin;FBDV/iPhone14,5;FBMD/iPhone;FBSN/iOS;FBSV/16.1;FBSS/3;FBID/phone;FBLC/da_DK;FBOP/5;FBDI/BE9904C1-02F3-4FF4-A216-0D0186BE28CA]"])
+	uas= (["Mozilla/5.0 (Linux; Android 11; Redmi Note 8 Pro Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4343 MMWEBSDK/20220903 Mobile Safari/537.36 MMWEBID/9184 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64"])
 	
 	rand_ua = random.choice(uas)
 	return rand_ua 
