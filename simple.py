@@ -130,7 +130,7 @@ def menu():
 			exit()
 		elif us in['']:
 			uas = ("Mozilla/5.0 (Linux; Android 10; Redmi Note 9 Pro Build/QKQ1.191215.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.77 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/325.0.0.36.170;]")
-			open('ugent.txt','r').write(uas)
+			open('ugent.txt','w').write(uas)
 		else:
 			open('ugent.txt','w').write(us)
 	elif romz in ['0']:
